@@ -1,0 +1,40 @@
+{
+  "name": "redux-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "base64js": "^1.0.1",
+    "classnames": "^2.2.5",
+    "element-react": "^1.4.5",
+    "element-theme-default": "^1.4.12",
+    "history": "^4.7.2",
+    "jquery": "^3.2.1",
+    "lodash.compose": "^2.4.1",
+    "lodash.curry": "^4.1.1",
+    "lodash.flatmap": "^4.5.0",
+    "prop-types": "^15.6.0",
+    "rc-color-picker": "^1.2.2",
+    "react": "^16.0.0",
+    "react-avatar-editor": "^10.3.0",
+    "react-bootstrap": "^0.31.5",
+    "react-date-range": "^0.9.4",
+    "react-datepicker-component": "^1.0.2",
+    "react-dnd": "^2.5.4",
+    "react-dnd-html5-backend": "^2.5.4",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^3.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2",
+    "serve": "^6.4.1",
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

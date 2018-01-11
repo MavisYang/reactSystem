@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+html,body{
+    font-size: 12px;
+    font-family: 'PingFangSC-Regular','微软雅黑', Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
+}
+a{text-decoration: none;}
+ul li{list-style: none}
+.clearfix:after{
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+/*input placeholder begin*/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #B5BDC6;
+}
+
+input::-moz-input-placeholder ,
+textarea::-webkit-input-placeholder{
+    color: #B5BDC6;
+}
+
+input::-o-input-placeholder ,
+textarea::-webkit-input-placeholder{
+    color: #B5BDC6;
+}
+
+/*input placeholder end*/

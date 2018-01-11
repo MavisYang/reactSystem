@@ -1,0 +1,188 @@
+.mm-containter{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.icon-background{
+  background: url("../images/icon/iconography.png") no-repeat;
+  background-size: 600px 700px;
+}
+.icon-background3{
+  background: url("../images/icon/iconography3.png") no-repeat;
+  background-size: 600px 1000px;
+}
+//header
+.signOutButton{
+  cursor: pointer;
+}
+.signOutButton:hover {
+  color: #288BF2;
+  text-decoration: underline;
+}
+//号航条
+.navBarWrapper-extend {
+  width: 84px !important;
+}
+.navBarWrapper-extend .nav-item .nav-textBox {
+  display: none;
+}
+.navBarWrapper{
+  width: 120px;
+  height: 100%;
+  background: #FFFFFF;
+  //position: relative;
+  float: left;
+  border: 1px solid #E9EBEE;
+  z-index: 99;
+  transition: width .4s;
+  .nav-avtarBox {
+    margin: 0 auto 20px;
+    .logo{
+      width: 42px;
+      height: 42px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin: 32px auto 0;
+      cursor: pointer;
+      position: relative;
+      background-image: url('../images/icon/logo.png');
+      background-size: cover;
+
+      &:after{
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #77d5a1;
+        position: absolute;
+        z-index: 4;
+        bottom: 2px;
+        right: 2px;
+      }
+    }
+  }
+  .consumerName{cursor: pointer;  font-family: PingFangSC-Regular;  font-size: 12px;  color: #485767;  letter-spacing: 0;  width: 100%;  text-align: center;  margin-bottom: 20px;  }
+  ul{
+    li a{
+      display: block;
+      
+    }
+    .nav-item {
+      border-left: 4px solid #ffffff;
+      height: 50px;
+      cursor: pointer;
+      .nav-icon {
+        width: 34px;
+        height: 34px;
+        float: left;
+        transform: scale(.9, .9);
+        margin-left: 10px;
+        margin-top: 7px;
+      }
+    }
+    .nav-item-active{
+      background: #EEF6FF;
+      border-left: 4px #288BF2 solid;
+      .nav-textBox{
+        font-family: PingFangSC-Medium;
+        font-size: 12px;
+        color: #288BF2;
+        letter-spacing: 0;
+      }
+    }
+    .nav-item-unactive:hover .nav-textBox{
+      color: #58A7F8;
+    }
+    .nav-textBox {
+      display: inline-block;
+      line-height: 50px;
+      vertical-align: middle;
+      padding-left: 10px;
+      font-family: "PingFangSC-light";
+      height: 50px;
+      overflow: hidden;
+      letter-spacing: 0;
+      font-size: 12px;
+      color: #8D969F;
+    }
+    //  navItem.code
+    /*
+    Home
+    About
+    */
+
+    .Home .nav-icon{
+      background-position: -22px -53px;
+    }
+    .Home  .nav-item-active .nav-icon,
+    .Home .nav-item-unactive:hover .nav-icon{
+      background-position: -56px -53px;
+    }
+    .About .nav-item .nav-icon{
+      background-position: -22px -359px;
+    }
+    .About .nav-item-active .nav-icon,
+    .About .nav-item-unactive:hover .nav-icon{
+      background-position: -56px -359px;
+    }
+  }
+
+
+
+}
+//头部
+.headerWrapper{
+  width: 100%;
+  height: 59px;
+  line-height: 59px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E9EBEE;
+  .headerBox{
+    float: right;
+    .signOutButton{
+      margin: 0 20px;
+    }
+  }
+}
+//内容：
+
+.contentWrapper{
+  //width: 100%;
+  //height: 100%;
+  float: left;
+}
+.mm-content-wraper{
+  width: 100%;
+  height: 100%;
+}
+
+//HeadNavTab begin
+.HeadNavTab{
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #485767;
+  min-width: 1100px;
+  background: #F8F8F9;
+  padding: 16px;
+}
+.HeadNavTab .navBox{
+  background-color: #FFFFFF;
+  height: 58px;
+  line-height: 58px;
+}
+.HeadNavTab .navBox span{
+  display: inline-block;
+  float: left;
+  margin: 0 20px;
+  width: 92px;
+  text-align: center;
+  height: 54px;
+  cursor: pointer;
+}
+.HeadNavTab .navBox .tabActive{
+  border-bottom: 4px solid #288BF2;
+}
+//HeadNavTab end
+//mm-filterWrapper
+
