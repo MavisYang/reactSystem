@@ -8,7 +8,22 @@ const navItems = [
     {
         code: 'Home',
         name: '首页',
-        target: '/home'
+        target: '/home',
+        secondNav:[
+            {
+                parentCode:'About',
+                code: 'JMScope',
+                name: '入群模板',
+                target: '/about/JMScope',
+
+            },
+            {
+                parentCode:'About',
+                code: 'JRScope',
+                name: '入群规则',
+                target: '/about/JRScope'
+            }
+        ]
     },
     {
         code: 'About',
@@ -17,42 +32,6 @@ const navItems = [
     },
 
 ]
-
-const secondNavItems = [
-    {
-        parentCode:'About',
-        code: 'JMScope',
-        name: '入群模板',
-        target: '/about/JMScope',
-
-    },
-    {
-        parentCode:'About',
-        code: 'JRScope',
-        name: '入群规则',
-        target: '/about/JRScope'
-    },
-]
-
-const SecondMenuItem = ({})=>{
-    return(
-        <div className='secondNavBox'>
-            <ul>
-                {
-                    secondNavItems.map((sNavItem,id)=>{
-                        return(
-                            <li key={id}>
-                                <NavLink to={sNavItem.target}>
-                                    {sNavItem.name}
-                                </NavLink>
-                            </li>
-                        )
-                    })
-                }
-            </ul>
-        </div>
-    )
-}
 
 class NavbarScope extends Component{
     // static propTypes = {

@@ -1,0 +1,99 @@
+
+@media screen and (max-width: 1439px){
+    .KWSBody .searchBtnWrapper{
+        right: 50px !important;
+    }
+}
+.KWSBody .tenantKws .contentTable{
+    padding-top: 20px;
+}
+.KWSBody .contentTable table tr td {
+    max-width: 80px;
+    min-width: 100px;
+}
+
+.KWSBody .contentTable table tr td:nth-child(1){
+    max-width: 60px;
+    min-width: 50px;
+}
+.KWSBody .operateBox{
+    padding: 0 10px;
+}
+.KWSBody .operateBox span{
+    cursor: pointer;
+}
+.KWSBody .operateBox .operateBtn{
+    padding: 0 6px;
+}
+.KWSBody .operateBox .operateBtn .itemEdit:hover,
+.KWSBody .contentTable table tbody tr:hover .itemEdit{
+    color: #288bf2;
+}
+.KWSBody .operateBox .operateBtn .itemDel:hover,
+.KWSBody .contentTable table tbody tr:hover .itemDel{
+    color: #F75A5A;
+}
+.KWSBody .operateBox .operateBtn .itemStatus:hover,
+.KWSBody .contentTable table tbody tr:hover .itemStatus{
+    color: #288bf2;
+}
+
+.KWSBody .addKwsBtn{
+    background: #6AD298;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    opacity: 1;
+    width: 90px;
+}
+.KWSBody .addKwsBtn:hover{
+    opacity: 0.8;
+}
+.KWSBody .editKeywords .kwsInput{
+    padding: 6px 10px;
+    border:1px solid transparent;
+    margin-right: 10px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.KWSBody .editKeywords .kwsInput:focus{
+    border: 1px solid #58A7F8;
+    box-shadow: 0 0 2px #58A7F8;
+    border-radius: 4px;
+}
+.KWSBody .editKeywords span{
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.KWSBody .editKeywords .confirmBtn{
+    border: 1px solid #58A7F8;
+    background: #58A7F8;
+    color: #FFFFFF;
+}
+.KWSBody .editKeywords .confirmBtn:hover{
+    opacity: 0.8;
+}
+.KWSBody .editKeywords .cancelBtn{
+    color: #B5BDC6;
+}
+.KWSBody .editKeywords .cancelBtn:hover{
+    color: #58A7F8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

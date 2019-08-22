@@ -184,5 +184,131 @@
   border-bottom: 4px solid #288BF2;
 }
 //HeadNavTab end
+.btnCss {
+  float: left;
+  font-family: PingFangSC-Regular;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+}
 //mm-filterWrapper
+.mm-filterWrapper{
+  background: #F8F8F9;
+  min-height: 70px;
+  min-width: 1100px;
+}
+.selectWrapper{
+  height: 30px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    margin-right: 6px;
+    line-height: 30px;
+  }
 
+  .titleInput {
+    border: 1px solid transparent;
+    height: 28px;
+    line-height: 28px;
+    width: 178px;
+    color: #B5BDC6;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+  }
+}
+.selectAutoComplete {
+  position: relative;
+  display: inline-block;
+  .autoCompleteWrapper {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    .optionUl {
+      width: 180px;
+      li {
+        list-style: none;
+        height: 30px;
+        line-height: 31px;
+        font-family: PingFangSC-Regular;
+        text-align: left;
+        font-size: 12px;
+        color: #485767;
+        padding-left: 12px;
+        padding-right: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          background: #F8F8F9;
+          font-family: PingFangSC-Medium;
+          font-size: 12px;
+          color: #288BF2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.home-content{
+  width: 100%;
+}
+
+.content-title{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  .addBtn{
+    border: 1px solid #58A7F8;
+    color: #58A7F8;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 20px;
+    &:hover{
+      background-color: #58A7F8;
+      color: #fff;
+    }
+  }
+}
+.tableArea{
+  display: flex;
+  padding: 0 32px 0 31px;
+  box-sizing: border-box;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #383E46;
+  word-break: break-all;
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-top: 1px solid #E9EBEE;
+    tr {
+      border-bottom: 1px solid #E9EBEE;
+      cursor: pointer;
+      td {
+        height: 48px;
+        vertical-align: middle;
+        min-width: 60px;
+        max-width: 80px;
+      }
+    }
+  }
+}

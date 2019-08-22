@@ -5,6 +5,7 @@ import {API_PATH} from '../constants/OriginName'
 import GroupMainScore from './HomeSystemPortal/GroupMainScore'
 import RobotMainScore from './HomeSystemPortal/RobotMainScore'
 import PoolMainScore from './HomeSystemPortal/PoolMainScore'
+import Media from "react-media";
 export default class Home extends Component{
     constructor(props){
         super(props)
@@ -45,7 +46,7 @@ export default class Home extends Component{
         let viewScope
         switch (viewContainter) {
             case 'GROUP':
-                viewScope = <GroupMainScore/>
+                viewScope = <GroupMainScore props={'props'} context={'context'}/>
                 break;
             case 'ROBOT':
                 viewScope = <RobotMainScore/>
@@ -57,7 +58,8 @@ export default class Home extends Component{
                 break;
 
         }
-        console.log(this.props.actions)
+        console.log(this.props.actions,'actions')
+        console.log(this.props.children,'children')
         return <div className='mm-content-wraper'>
             <div className='HeadNavTab'>
                 <div className='navBox'>

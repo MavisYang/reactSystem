@@ -1,0 +1,680 @@
+.FPBody {
+  background: #ffffff;
+  overflow: auto;
+}
+.btnCss {
+  float: left;
+  font-family: PingFangSC-Regular;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+}
+.operate {
+  float: left;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #B5BDC6;
+  margin-top: 6px;
+  position: relative;
+  cursor: pointer;
+}
+.operate:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -1px;
+  left: -24px;
+  background: url('../images/icon/iconography.png') no-repeat;
+  background-size: 600px 700px;
+}
+.mm-containerBox .selectBox .selectOption em {
+  padding-left: 10px;
+}
+.operate-delete {
+  color: #B5BDC6;
+  margin-right: 42px;
+}
+.operate-delete:hover {
+  color: #F75A5A;
+}
+.operate-delete:hover:after {
+  background-position: -130px -153px;
+}
+.operate-delete:after {
+  top: -2px;
+  background-position: -110px -153px;
+}
+.operate-refresh {
+  color: #B5BDC6;
+  margin-right: 42px;
+}
+.operate-refresh:hover {
+  color: #58A7F8;
+}
+.operate-refresh:hover:after {
+  background-position: -130px -133px;
+  animation: refreshLoading 1s linear infinite;
+  -webkit-animation: refreshLoading 1s linear infinite;
+}
+.operate-refresh:after {
+  background-position: -110px -133px;
+}
+@keyframes refreshLoading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes refreshLoading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imgPreviewBox {
+  position: relative;
+}
+.imgPreviewBox .smallImg {
+  width: 30px;
+  height: 30px;
+}
+.imgPreviewBox .showBigImg {
+  background: #FFFFFF;
+  box-shadow: 0 3px 12px 0 #B5BDC6;
+  border-radius: 6px;
+  width: 160px;
+  height: 166px;
+  padding: 22px 20px;
+  position: absolute;
+  z-index: 999;
+  top: 43px;
+  left: -30px;
+}
+.imgPreviewBox .showBigImg img {
+  width: 160px;
+  height: 160px;
+}
+.imgPreviewBox .showBigImg:after {
+  position: absolute;
+  display: inline-block;
+  top: -7px;
+  left: 96px;
+  width: 0;
+  height: 0px;
+  content: '';
+  border-style: solid;
+  border-width: 8px;
+  border-color: #fff #fff transparent transparent;
+  transform: rotate(315deg);
+  box-shadow: 2px -2px 2px #eceef1;
+}
+.promptBox .sureBoxModel {
+  display: inline-block;
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  margin: 0;
+}
+.promptBox .sureBoxModel .sure-field-state {
+  width: 340px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  text-align: center;
+}
+.promptBox .sureBoxModel .sure-field-saveANDdelete {
+  background: #E9FAF1;
+  border: 1px solid #6AD298;
+  color: #6AD298;
+}
+.promptBox .sureBoxModel .sure-field-add {
+  background: #E3F1FF;
+  border: 1px solid #58A7F8;
+  color: #288BF2;
+}
+/*HeadNavTab begin*/
+.HeadNavTab {
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #485767;
+  min-width: 1100px;
+  background: #F8F8F9;
+  padding: 16px 30px 0 30px;
+}
+.HeadNavTab .navBox {
+  background-color: #FFFFFF;
+  height: 58px;
+  line-height: 58px;
+}
+.HeadNavTab .navBox span {
+  display: inline-block;
+  float: left;
+  margin: 0 20px;
+  width: 92px;
+  text-align: center;
+  height: 54px;
+  cursor: pointer;
+}
+.HeadNavTab .navBox .tabActive {
+  border-bottom: 4px solid #288BF2;
+}
+/*HeadNavTab end*/
+/*mm-filterWrapper begin*/
+.filterWrapper {
+  height: 70px;
+  background: #F8F8F9;
+  padding: 0 30px;
+}
+.filterWrapper .searchWrapper {
+  float: right !important;
+}
+.filterWrapper .selectWrapper {
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.filterWrapper .selectWrapper .selectLabel {
+  float: left;
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #485767;
+  margin-right: 6px;
+  line-height: 30px;
+}
+.filterWrapper .selectWrapper .selectAutoComplete {
+  position: relative;
+  display: inline-block;
+}
+.filterWrapper .selectWrapper .titleInput {
+  border: 1px solid transparent;
+  height: 28px;
+  width: 178px;
+  color: #B5BDC6;
+  font-family: PingFangSC-Light;
+  font-size: 13px;
+  line-height: 28px;
+  text-indent: 12px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.filterWrapper .selectWrapper .titleInput:focus {
+  border: 1px solid #b5bdc6;
+  outline: none;
+}
+.filterWrapper .selectWrapper .searchBtn {
+  background: #58A7F8;
+  border: 1px solid #58A7F8;
+  border-radius: 2px;
+  height: 28px;
+  line-height: 28px !important;
+  text-align: center;
+  color: #fff !important;
+  cursor: pointer;
+  width: 98px;
+  margin-left: 20px;
+  margin-right: 20px !important;
+}
+.filterWrapper .selectWrapper .searchBtn:hover,
+.filterWrapper .selectWrapper .searchBtn:active {
+  background: #288bf2;
+  border: 1px solid #288bf2;
+}
+.filterWrapper .selectWrapper .clearBtn {
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #5D90C5;
+  cursor: pointer;
+  line-height: 30px;
+}
+.filterWrapper .selectWrapper .clearBtn:hover,
+.filterWrapper .selectWrapper .clearBtn:active {
+  color: #288bf2;
+}
+.autoCompleteWrapper {
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.autoCompleteWrapper .optionUl {
+  width: 180px;
+}
+.autoCompleteWrapper .optionUl li {
+  list-style: none;
+  height: 30px;
+  line-height: 31px;
+  font-family: PingFangSC-Regular;
+  text-align: left;
+  font-size: 12px;
+  color: #485767;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.autoCompleteWrapper .optionUl li:hover {
+  background: #F8F8F9;
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #288BF2;
+  cursor: pointer;
+}
+.selectBox {
+  font-family: PingFangSC-Medium;
+  width: 180px;
+  position: relative;
+  float: left;
+}
+.selectBox .selectOption {
+  width: 178px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  height: 28px;
+  line-height: 28px;
+}
+.selectBox .selectOption .selectTip {
+  color: #485767;
+}
+.selectBox .selectOption em {
+  font-family: PingFangSC-Light;
+  font-size: 13px;
+  color: #B5BDC6;
+  display: inline-block;
+  line-height: 30px;
+  font-style: normal;
+}
+.selectBox .selectOption .selIcon {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  background-position: -110px -113px;
+  float: right;
+  margin: 5px;
+}
+.selectBox .optionUl {
+  width: 180px;
+  background: #FFFFFF;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  transition: all .3s;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 2;
+  max-height: 120px;
+  overflow-y: auto;
+}
+.selectBox .optionUl ul li {
+  height: 30px;
+  line-height: 31px;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  font-size: 12px;
+  color: #485767;
+  cursor: pointer;
+}
+.selectBox .optionUl ul li:hover {
+  background: #F8F8F9;
+  color: #288BF2;
+}
+.sendDateBoxSelect {
+  float: left;
+}
+.sendDateBoxSelect .datePickerBox {
+  position: absolute;
+  top: 31px;
+  left: 49px;
+  transform: scale(0.935, 1);
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+}
+.sendDateBoxSelect .sendDateInput {
+  border: 1px solid transparent;
+  color: #B5BDC6;
+  font-family: PingFangSC-Light;
+  font-size: 13px;
+  text-indent: 12px;
+  background: #FFFFFF;
+  border-radius: 2px;
+  width: 180px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  margin: 0;
+}
+.sendDateBoxSelect .sendDateInput::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url('../images/icon/iconography.png') no-repeat -110px -173px;
+  background-size: 600px 700px;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+.contentWrapper .contentTitle {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.contentWrapper .contentTitle .funTitle-left {
+  float: left;
+}
+.contentWrapper .contentTitle .funTitle-left .setRobot {
+  background: #58A7F8;
+  color: #fff;
+  opacity: 1;
+  margin-right: 30px;
+}
+.contentWrapper .contentTitle .funTitle-left .setRobot:hover {
+  opacity: 0.8;
+}
+.contentWrapper .contentTitle .funTitle-left .setApply {
+  border: 1px solid #58A7F8;
+  color: #58A7F8;
+  line-height: 28px;
+}
+.contentWrapper .contentTitle .funTitle-left .setApply:hover {
+  background: #58A7F8;
+  color: #fff;
+}
+.contentWrapper .contentTitle .funTitle-right {
+  float: right;
+}
+.contentWrapper .contentTitle .funTitle-right span {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: PingFangSC-Regular;
+  height: 30px;
+  line-height: 30px;
+  color: #485767;
+}
+.contentTable {
+  display: flex;
+  box-sizing: border-box;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #383E46;
+  word-break: break-all;
+  padding: 0 30px;
+}
+.contentTable table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-top: 1px solid #E9EBEE;
+}
+.contentTable table tr {
+  border-bottom: 1px solid #E9EBEE;
+  cursor: pointer;
+}
+.contentTable table tr:hover {
+  background: #F8F8F9;
+}
+.contentTable table tr td {
+  height: 48px;
+  vertical-align: middle;
+}
+.contentTable table thead tr td {
+  font-family: PingFangSC-Medium;
+  color: #B5BDC6;
+}
+.contentTable table tbody tr:hover .checkBox {
+  display: block;
+}
+.contentTable table thead td .number .checkBox {
+  display: block;
+}
+.contentTable table td .number {
+  display: inline-block;
+  position: relative;
+  padding-left: 26px;
+  width: 24px;
+}
+.contentTable table td .number .checkBox {
+  width: 20px;
+  height: 20px;
+  background-position: -130px -193px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  display: none;
+}
+.contentTable table td .number .checked {
+  background-position: -150px -193px;
+  display: block;
+}
+.contentTable table tr td {
+  max-width: 100px;
+  min-width: 120px;
+}
+.contentTable table tr td:nth-child(1) {
+  max-width: 80px;
+  min-width: 80px;
+}
+.aloneAssignBox .uListBtn:hover,
+.aloneAssignBox .uListBtn:active,
+.aloneAssignBox table tbody tr:hover .uListBtn {
+  cursor: pointer;
+  color: #58A7F8;
+  font-family: PingFangSC-Medium;
+}
+.selectRobotPool .selectRobotBox {
+  padding: 0 100px;
+}
+.selectRobotPool .selectRobotBox .select-title {
+  padding-top: 20px;
+  padding-left: 22px;
+  /*letter-spacing: 2px;*/
+  position: relative;
+}
+.selectRobotPool .selectRobotBox .select-title .checkBox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -130px -193px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  cursor: pointer;
+}
+.selectRobotPool .selectRobotBox .select-title .checked {
+  background-position: -150px -193px;
+}
+.selectRobotPool .selectRobotBox .select-title input {
+  width: 50px;
+  padding: 2px 0;
+  border: 1px solid #dddddd;
+  margin-left: 5px;
+}
+.selectRobotPool .selectRobotBox .select-view {
+  position: relative;
+  margin: 20px 0;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left,
+.selectRobotPool .selectRobotBox .select-view .select-view-right {
+  width: 330px;
+  height: 360px;
+  background: #FFFFFF;
+  border: 1px solid #DADEE2;
+  border-radius: 2px;
+  overflow-y: auto;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left p,
+.selectRobotPool .selectRobotBox .select-view .select-view-right p {
+  padding: 10px 12px;
+  border-bottom: 1px solid #DADEE2;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li:hover,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li:hover {
+  background-color: #F8F8F9;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li:hover .removeBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li:hover .removeBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li:hover .addBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li:hover .addBtn {
+  display: inline-block;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li span,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li span {
+  display: inline-block;
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .uNum,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .uNum {
+  margin-right: 10px;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .removeBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .removeBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .addBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .addBtn {
+  float: right;
+  padding: 2px 10px;
+  color: #fff;
+  margin-top: -2px;
+  border-radius: 2px;
+  display: none;
+  cursor: pointer;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .addBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .addBtn {
+  background-color: #58A7F8;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .addBtn:hover,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .addBtn:hover,
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .addBtn:active,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .addBtn:active {
+  background-color: #288bf2;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .removeBtn,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .removeBtn {
+  background-color: #F75A5A;
+  opacity: 1;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .removeBtn:hover,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .removeBtn:hover,
+.selectRobotPool .selectRobotBox .select-view .select-view-left ul li .removeBtn:active,
+.selectRobotPool .selectRobotBox .select-view .select-view-right ul li .removeBtn:active {
+  opacity: 0.8;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-left {
+  float: left;
+}
+.selectRobotPool .selectRobotBox .select-view .select-view-right {
+  float: right;
+  margin-right: 200px;
+}
+.selectRobotPool .selectRobotBox .selectCover {
+  position: absolute;
+  top: 0;
+  background-color: #ddd;
+  width: 332px;
+  height: 362px;
+  opacity: 0.3;
+}
+.selectRobotPool .selectRobotBox .selectCover-left {
+  left: 0;
+}
+.selectRobotPool .selectRobotBox .selectCover-right {
+  right: 200px;
+}
+.footerBtnBox {
+  float: right;
+  padding: 30px;
+}
+.footerBtnBox .cancelBtn {
+  color: #B5BDC6;
+  margin-right: 29px;
+  cursor: pointer;
+}
+.footerBtnBox .cancelBtn:hover,
+.footerBtnBox .cancelBtn:active {
+  color: #485767;
+}
+.footerBtnBox .comfirmBtn {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: #58A7F8;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.footerBtnBox .comfirmBtn:hover,
+.footerBtnBox .comfirmBtn:active {
+  opacity: 0.8;
+}
+.aloneRobotList .operateBox span {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.aloneRobotList .operateBox .groupListBtn:hover,
+.aloneRobotList .operateBox .groupListBtn:active {
+  color: #288bf2;
+}
+.aloneRobotList .operateBox .logOutBtn:hover,
+.aloneRobotList .operateBox .logOutBtn:active {
+  color: #F75A5A;
+}
+.aloneRobotList .contentTable table tr:hover .groupListBtn {
+  color: #288bf2;
+}
+.aloneRobotList .contentTable table tr:hover .logOutBtn {
+  color: #F75A5A;
+}
+.aloneGroupList .contentTable table tr:hover .logOutBtn {
+  color: #F75A5A;
+}
+.aloneGroupList .contentTable table tr td:nth-child(2){
+    max-width: 300px;
+}
+.aloneGroupList .contentTable table tr td:nth-child(3){
+    max-width: 200px;
+}
+.mixingAssignScore .quotaBtn:hover,
+.quotaBtn:active,
+.mixingAssignScore .contentTable table tr:hover .quotaBtn {
+  color: #288bf2;
+}
+.mixQuotaSituation .filterWrapper {
+  height: 120px;
+}
+.mixQuotaSituation .showBigImg {
+  left: -20px;
+}
+.mixQuotaSituation .contentTable table tr td:nth-child(3) {
+  min-width: 200px;
+}
+
+@media screen and (min-width: 1395px){
+    .applyRecordView .filterWrapper{
+        height:70px !important;
+    }
+}
+
+

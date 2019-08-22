@@ -55,6 +55,62 @@ class AuthProvider {
             })
     }
 
+
+    getAccessToken(){
+        if(!this.getCookie('access_token')){
+            return  this.onRefreshToken()
+        }else {
+            return new Promise((resolve,reject) => {
+                resolve(this.getCookie('access_token'))
+            })
+        }
+    }
+
+    setLocalStorage(key,value){
+        if(window.localStorage){
+            localStorage.setItem(key,value)
+        }
+    }
+
+
+    getLocalStorage(key){
+        if(window.localStorage){
+            for(let name in window.localStorage){
+                if(key === name){
+                    return localStorage.getItem(key)
+                }
+            }
+            return null
+        }
+    }
+
+    setLocalStorageObj(key,obj){
+        if(window.localStorage){
+            localStorage.setItem(key,JSON.stringify(obj)) //将JSON对象转化成字符串
+        }
+    }
+
+    getLocalStorageObj(key){
+        if(window.localStorage){
+            JSON.parse(localStorage.getItem(key))//把字符串转换成JSON对象
+        }
+    }
+
+    removeLocalStorage(key){
+        if(window.localStorage)
+            localStorage.removeItem(key)
+    }
+
+    setCookie(userName,password){
+        let exp = new Date()
+        // exp.setTime(exp.getTime()+1000*60*60*24*365)
+        exp.setTime(exp.getTime()+1)
+        document.cookie = 'userName' +'=' + escape(userName) +';expires='+exp.toGMTString()
+        document.cookie = 'password' +'=' + escape(password) +';expires='+exp.toGMTString()
+
+        console.log(document.cookie)
+    }
+
     getCookie(key) {
         var aCookie = document.cookie.split("; ");
         // console.log(aCookie);
@@ -67,14 +123,12 @@ class AuthProvider {
         return null;
     }
 
-    getAccessToken(){
-        if(!this.getCookie('access_token')){
-            return  this.onRefreshToken()
-        }else {
-            return new Promise((resolve,reject) => {
-                resolve(this.getCookie('access_token'))
-            })
-        }
+    removeCookie(key){
+        let exp = new Date()
+        exp.setTime(exp.getTime() - 1);
+        var cval=this.getCookie(key);
+        if(cval!=null)
+            document.cookie= key + "="+cval+";expires="+exp.toGMTString();
     }
 }
 

@@ -11,6 +11,7 @@ export default class RobotAssignScore extends Component{
     render(){
         return <div>
             RobotAssignScore
+
         </div>
     }
 }

@@ -5,7 +5,7 @@ const initState = false
 
 const extendState = (state = initState, action) => {
     switch (action.type) {
-        case 'CHANGE':
+        case 'CHANGE': //change
             return !state
 
         default:
@@ -15,7 +15,7 @@ const extendState = (state = initState, action) => {
 
 }
 const rootReducer =combineReducers({
-    // extendState,adminTaskList,
+    extendState,
     routing: routerReducer
 })
 export default rootReducer

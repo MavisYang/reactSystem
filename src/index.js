@@ -2,26 +2,36 @@ import React, {Component} from 'react';
 import {render} from 'react-dom';
 import {browserHistory} from 'react-router'
 import {Router, Route,Switch,Redirect} from 'react-router-dom'
-import {routerMiddleware } from 'react-router-redux'
+import {routerMiddleware,ConnectedRouter ,routerReducer,go} from 'react-router-redux'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware} from 'redux'
 import createHistory from 'history/createBrowserHistory'
 import reducers from './reducers'
-
+import thunk from 'redux-thunk'
 import Login from './containers/Login'
 import NavbarScope from './components/NavbarScope'
 import Header from './containers/Header'
 import Home from './containers/Home'
 import About from './containers/About'
 
+// console.log(createHistory,'createHistory')
 const history = createHistory({basename:''})
+// console.log(history,'history')
 const middleware = routerMiddleware(history)
+// console.log(middleware,'middleware')
+
 export const store = createStore(
     reducers,
     applyMiddleware(middleware)
+    // applyMiddleware(thunk)
 )
+const init = store.getState();
+console.log(init,'init');
+store.dispatch({type:'add'});
 
-const MainScope=({location,history})=>{
+const MainScope=({location,history,store})=>{
+    console.log(location,history,'location,history')
+    console.log(store,'store--')
     const judage = location.pathname == "/home" ||location.pathname == '/about'
     return(
         <div className='mm-containter'>
@@ -40,15 +50,6 @@ const MainScope=({location,history})=>{
     )
 }
 
-const Html =()=>{
-    return(
-        <div>
-            <Switch>
-                <Route exact path='/home' component={Home}/>
-            </Switch>
-        </div>
-    )
-}
 
 render(
     <Provider store={store}>
