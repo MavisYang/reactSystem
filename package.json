@@ -30,7 +30,7 @@
     "react-scripts": "1.0.14",
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
-    "serve": "^6.4.1",
+    "serve": "^10.1.2",
     "webpack": "^3.8.1"
   },
   "scripts": {
